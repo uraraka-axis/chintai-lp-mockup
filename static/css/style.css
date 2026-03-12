@@ -1357,50 +1357,32 @@ br.sm-break {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  padding: 1.5rem;
   transition: box-shadow 0.3s, transform 0.3s;
 }
 .column-card:hover {
   box-shadow: 0 8px 24px rgba(27, 59, 111, 0.15);
   transform: translateY(-4px);
 }
-.column-card-img {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.column-card-img span.card-icon {
-  font-size: 3rem;
-  filter: grayscale(0.2) brightness(1.1);
-}
 .column-card-tag {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(255, 255, 255, 0.95);
+  display: inline-block;
+  background: #EEF2F7;
   color: #1B3B6F;
   font-size: 0.7rem;
   font-weight: 700;
   padding: 3px 10px;
   border-radius: 20px;
   letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
+  align-self: flex-start;
 }
-.column-card-body {
-  padding: 1.2rem 1.5rem 1.5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.column-card-body h3 {
+.column-card h3 {
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0 0 0.6rem;
   color: #222;
 }
-.column-card-body p {
+.column-card p {
   font-size: 0.82rem;
   color: #777;
   line-height: 1.6;
