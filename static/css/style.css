@@ -1347,3 +1347,70 @@ br.md-break {
 br.sm-break {
   display: none;
 }
+
+/* ── Column Cards (関連コラム) ── */
+.column-card {
+  background: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.column-card:hover {
+  box-shadow: 0 8px 24px rgba(27, 59, 111, 0.15);
+  transform: translateY(-4px);
+}
+.column-card-img {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.column-card-img span.card-icon {
+  font-size: 3rem;
+  filter: grayscale(0.2) brightness(1.1);
+}
+.column-card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1B3B6F;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+.column-card-body {
+  padding: 1.2rem 1.5rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.column-card-body h3 {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 0.6rem;
+  color: #222;
+}
+.column-card-body p {
+  font-size: 0.82rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+.column-card-arrow {
+  font-size: 0.8rem;
+  color: #1B3B6F;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  display: inline-block;
+}
