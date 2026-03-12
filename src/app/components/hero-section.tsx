@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
-import logoImg from "figma:asset/fabeb8c70dc874a01912da2c00ddd55d81efe6b1.png";
+const logoImg = "https://smart-comic.co.jp/wp-content/uploads/2025/02/logo_01.png";
 
 export function HeroSection() {
   return (
@@ -86,7 +86,7 @@ export function HeroSection() {
             <a href="#faq" className="hover:text-[#1B3B6F] transition-colors">よくある質問</a>
           </nav>
           <a
-            href="#pricing"
+            href="https://smart-comic.co.jp/contact-new/"
             className="hidden md:inline-flex bg-[#F5A623] text-white text-sm px-5 py-2.5 rounded-lg hover:bg-[#E09410] transition-all"
           >
             資料請求
@@ -142,12 +142,12 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <button className="bg-[#F5A623] text-white px-8 py-4 rounded-xl text-lg hover:bg-[#E09410] transition-all shadow-lg shadow-[#F5A623]/25 cursor-pointer">
+            <a href="https://smart-comic.co.jp/contact-new/" className="bg-[#F5A623] text-white px-8 py-4 rounded-xl text-lg hover:bg-[#E09410] transition-all shadow-lg shadow-[#F5A623]/25 cursor-pointer inline-block">
               資料請求はこちら（無料）
-            </button>
-            <button className="text-[#1B3B6F]/70 px-8 py-4 rounded-xl text-lg border border-[#1B3B6F]/15 hover:border-[#1B3B6F]/30 hover:text-[#1B3B6F] transition-all cursor-pointer bg-white/60 backdrop-blur-sm">
+            </a>
+            <a href="https://smart-comic.co.jp/contact-new/" className="text-[#1B3B6F]/70 px-8 py-4 rounded-xl text-lg border border-[#1B3B6F]/15 hover:border-[#1B3B6F]/30 hover:text-[#1B3B6F] transition-all cursor-pointer bg-white/60 backdrop-blur-sm inline-block">
               お問い合わせ
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

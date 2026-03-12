@@ -97,9 +97,9 @@ export function PropertyTypesSection() {
           <p className="text-white/80 mb-6">
             まずはお気軽にお問い合わせください
           </p>
-          <button className="bg-[#F5A623] text-white px-8 py-3.5 rounded-xl hover:bg-[#E09410] transition-all hover:scale-105 shadow-lg shadow-black/15 cursor-pointer">
+          <a href="https://smart-comic.co.jp/contact-new/" className="bg-[#F5A623] text-white px-8 py-3.5 rounded-xl hover:bg-[#E09410] transition-all hover:scale-105 shadow-lg shadow-black/15 cursor-pointer inline-block">
             資料請求はこちら（無料）
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

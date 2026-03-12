@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import logoImg from "figma:asset/fabeb8c70dc874a01912da2c00ddd55d81efe6b1.png";
+const logoImg = "https://smart-comic.co.jp/wp-content/uploads/2025/02/logo_01.png";
 
 export function FooterSection() {
   return (
@@ -24,12 +24,12 @@ export function FooterSection() {
               導入事例や料金の詳細をまとめた資料を無料でお送りいたします。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#1B3B6F] text-white px-8 py-4 rounded-xl text-lg hover:bg-[#162f5a] transition-all hover:scale-105 shadow-lg shadow-[#1B3B6F]/20 cursor-pointer">
+              <a href="https://smart-comic.co.jp/contact-new/" className="bg-[#1B3B6F] text-white px-8 py-4 rounded-xl text-lg hover:bg-[#162f5a] transition-all hover:scale-105 shadow-lg shadow-[#1B3B6F]/20 cursor-pointer inline-block">
                 資料請求はこちら（無料）
-              </button>
-              <button className="bg-white text-[#1B3B6F] px-8 py-4 rounded-xl text-lg border-2 border-[#1B3B6F] hover:bg-[#1B3B6F]/5 transition-all cursor-pointer">
+              </a>
+              <a href="https://smart-comic.co.jp/contact-new/" className="bg-white text-[#1B3B6F] px-8 py-4 rounded-xl text-lg border-2 border-[#1B3B6F] hover:bg-[#1B3B6F]/5 transition-all cursor-pointer inline-block">
                 お問い合わせ
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -53,7 +53,7 @@ export function FooterSection() {
               <a href="#property-types" className="hover:text-white transition-colors">活用イメージ</a>
               <a href="#faq" className="hover:text-white transition-colors">よくある質問</a>
               <a href="#flow" className="hover:text-white transition-colors">導入の流れ</a>
-              <a href="#" className="hover:text-white transition-colors">お問い合わせ</a>
+              <a href="https://smart-comic.co.jp/contact-new/" className="hover:text-white transition-colors">お問い合わせ</a>
             </div>
           </div>
           <div className="border-t border-white/10 pt-6 text-center">
