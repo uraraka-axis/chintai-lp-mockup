@@ -60,7 +60,7 @@
       "name": "費用はどのくらいかかりますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "月額3,000円〜（税別）でご利用いただけます。人気コミック・話題作もセットでこの価格に含まれています。初期費用は無料です。新刊自動お届けサービスも無料でご利用いただけます。"
+        "text": "月額3,000円〜（税別）でご利用いただけます。人気コミック・話題作もセットでこの価格に含まれています。初期費用は無料です。新刊自動お届けサービスや在庫管理システムも無料でご利用いただけます。"
       }
     },
     {
@@ -134,7 +134,7 @@ var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi,
 <!-- User Insight PCDF Code End -->
 
 <!-- Stylesheet -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20260403z5">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -146,37 +146,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      HERO SECTION
      ============================== -->
 <section class="hero">
-  <!-- Background image with blur -->
+  <!-- Background image -->
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1601639426179-45168809390a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW5nYSUyMGJvb2tzJTIwc2hlbGYlMjBjbG9zZSUyMHVwJTIwY29sb3JmdWwlMjBzcGluZXMlMjBqYXBhbnxlbnwxfHx8fDE3NzMxMTY1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="">
+    <img src="images/main_01.jpg" alt="">
     <div class="hero-bg-overlay"></div>
-  </div>
-
-  <!-- Decorative wave shapes -->
-  <div class="hero-decor">
-    <!-- 大きな塗り波 — 右上から左下へなだらかに流れる -->
-    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.05" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none">
-      <path d="M1440 0C1300 80 1100 200 900 260C700 320 500 280 300 340C100 400 0 500 -100 580L-100 900L1440 900Z" fill="#1B3B6F"/>
-    </svg>
-
-    <!-- アウトライン波 — 左方向へ流れる2本線 -->
-    <svg style="position:absolute;top:25%;left:0;width:100%;height:300px" viewBox="0 0 1440 300" fill="none" preserveAspectRatio="none">
-      <path d="M1440 60C1300 100 1100 160 900 140C700 120 500 180 300 160C100 140 0 180 -100 200" stroke="#1B3B6F" stroke-width="2" stroke-linecap="round" opacity="0.10"/>
-      <path d="M1440 100C1280 140 1080 200 880 180C680 160 480 220 280 200C80 180 -20 220 -100 240" stroke="#1B3B6F" stroke-width="1.5" stroke-linecap="round" opacity="0.06"/>
-    </svg>
-
-    <!-- 下部の穏やかな波 -->
-    <svg style="position:absolute;bottom:60px;left:0;width:100%;height:200px;opacity:0.04" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
-      <path d="M1440 40C1200 100 960 20 720 80C480 140 240 60 0 120V200H1440Z" fill="#1B3B6F"/>
-    </svg>
-
-    <!-- 装飾サークル -->
-    <div class="hero-circle-1"></div>
-    <div class="hero-circle-2"></div>
   </div>
 
   <!-- Top navigation -->
   <div class="top-nav">
+    <div class="top-nav-bg"></div>
     <div class="top-nav-inner">
       <div class="top-nav-logo">
         <a href="https://smart-comic.co.jp/"><img src="https://smart-comic.co.jp/wp-content/uploads/2025/02/logo_01.png" alt="SmartComic"></a>
@@ -204,35 +182,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Hero content -->
   <div class="hero-content">
     <div class="hero-content-inner">
-      <span class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        賃貸物件オーナー・管理会社様へ
-      </span>
+      <div class="hero-text-box-wrapper">
+        <span class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          賃貸物件オーナー・管理会社様へ
+        </span>
 
-      <h1>
-        賃貸物件の空室対策に<br>
-        <span class="hero-accent">
-          マンガコーナー
-          <svg viewBox="0 0 300 8" fill="none">
-            <path d="M2 6C50 1 250 1 298 6" stroke="#F5A623" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
-          </svg>
-        </span>を導入して<br>入居率を向上
-      </h1>
+        <div class="hero-text-box">
+          <h1>
+            賃貸物件の空室対策に<br>
+            <span class="hero-accent">
+              マンガコーナー
+              <svg viewBox="0 0 300 8" fill="none">
+                <path d="M2 6C50 1 250 1 298 6" stroke="#F5A623" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+              </svg>
+            </span>を導入して<br>入居率を向上
+          </h1>
 
-      <p class="hero-sub">
-        物件共用部にコミックコーナーを置くことで、物件の魅力を一段上へ。<br class="sm-break">
-        入居者の満足度向上・長期入居の促進・仲介会社へのアピールに。
-      </p>
+          <p class="hero-sub">
+            物件共用部にコミックコーナーを置くことで、物件の魅力を一段上へ。<br class="sm-break">
+            入居者の満足度向上・長期入居の促進・仲介会社へのアピールに。
+          </p>
+        </div>
 
-      <div class="hero-buttons">
-        <a href="https://smart-comic.co.jp/contact-new/" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          お問い合わせはこちら（無料）
-        </a>
-        <a href="tel:0120887748" class="btn-tel" style="display:inline-flex;align-items:center;gap:8px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          0120-887-748
-        </a>
+        <div class="hero-buttons">
+          <a href="https://smart-comic.co.jp/contact-new/" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            お問い合わせはこちら（無料）
+          </a>
+          <a href="tel:0120887748" class="btn-tel" style="display:inline-flex;align-items:center;gap:8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0120-887-748
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -300,14 +282,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>内見時にインパクトを与えたいが、目を引くポイントがない</p>
     </div>
 
-    <div class="pain-bridge">
-      <div class="pain-bridge-inner">
-        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" stroke="#2B5EA7"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <p>
-          低コストで導入でき、入居者に直接的な付加価値を届けられる手法として、<br class="md-break">
-          いま大家様・管理会社様に注目されているのが、物件共用部への<span class="highlight">マンガコーナー</span>の設置です。
-        </p>
-      </div>
+  </div>
+
+  <div class="pain-illustration">
+    <img src="images/bg_01.png" alt="" loading="lazy">
+  </div>
+
+  <div class="pain-bridge">
+    <p>
+      低コストで導入でき、入居者に直接的な付加価値を届けられる手法として、<br>いま大家様・管理会社様に注目されているのが、<br>物件共用部へのマンガコーナーの設置です。
+    </p>
+    <div class="pain-bookshelf">
+      <img src="images/bg_02.gif" alt="マンガコーナーイメージ" loading="lazy">
     </div>
   </div>
 </section>
@@ -372,49 +358,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="property-grid">
       <!-- Property 1 -->
-      <div class="property-card">
-        <div class="property-card-image">
-          <img src="https://images.unsplash.com/photo-1589572368687-c093a494522a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMGFwYXJ0bWVudCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3IlMjBjbGVhbnxlbnwxfHx8fDE3NzMxMTU4MzdfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="賃貸マンション・アパート" loading="lazy">
-          <div class="property-card-image-overlay"></div>
-          <div class="property-card-tags">
-            <span class="property-tag">空室対策</span>
-            <span class="property-tag">入居率UP</span>
-          </div>
-        </div>
-        <div class="property-card-body">
-          <h3>賃貸マンション・アパート</h3>
-          <p>エントランスや共用ラウンジに設置。入居者の満足度が向上し、退去率ダウンや空室対策としての効果が期待できます。</p>
-        </div>
+      <div class="property-item">
+        <img src="images/im_01.jpg" alt="賃貸マンション・アパート" loading="lazy">
+        <h3>賃貸マンション・アパート</h3>
+        <p>エントランスや共用ラウンジに設置。入居者の満足度が向上し、退去率ダウンや空室対策としての効果が期待できます。</p>
       </div>
       <!-- Property 2 -->
-      <div class="property-card">
-        <div class="property-card-image">
-          <img src="https://images.unsplash.com/photo-1768666197970-1b6614f94ffe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMHN0dWRpbyUyMGFwYXJ0bWVudCUyMGZ1cm5pc2hlZCUyMGJlZCUyMGRlc2slMjBicmlnaHQlMjB3aW5kb3clMjBqYXBhbnxlbnwxfHx8fDE3NzMxMTc1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="学生寮・学生マンション" loading="lazy">
-          <div class="property-card-image-overlay"></div>
-          <div class="property-card-tags">
-            <span class="property-tag">学生向け</span>
-            <span class="property-tag">コミュニティ</span>
-          </div>
-        </div>
-        <div class="property-card-body">
-          <h3>学生寮・学生マンション</h3>
-          <p>学生に人気のマンガは入居の決め手になる可能性も。共用スペースの活性化で寮生活の魅力もアップ。</p>
-        </div>
+      <div class="property-item">
+        <img src="images/im_02.jpg" alt="学生寮・学生マンション" loading="lazy">
+        <h3>学生寮・学生マンション</h3>
+        <p>学生に人気のマンガは入居の決め手になる可能性も。共用スペースの活性化で寮生活の魅力もアップ。</p>
       </div>
       <!-- Property 3 -->
-      <div class="property-card">
-        <div class="property-card-image">
-          <img src="https://images.unsplash.com/photo-1762640448649-4eb3b65e67da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwbGlicmFyeSUyMHdhbGwlMjBzaGVsdmVzJTIwc29mYSUyMGNvenklMjBuYXR1cmFsJTIwbGlnaHR8ZW58MXx8fHwxNzczMTE3OTE1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="シェアハウス" loading="lazy">
-          <div class="property-card-image-overlay"></div>
-          <div class="property-card-tags">
-            <span class="property-tag">交流促進</span>
-            <span class="property-tag">差別化</span>
-          </div>
-        </div>
-        <div class="property-card-body">
-          <h3>シェアハウス</h3>
-          <p>共用リビングに設置してコミュニケーションのきっかけに。住人同士の交流促進や物件の個性づくりに。</p>
-        </div>
+      <div class="property-item">
+        <img src="images/im_03.jpg" alt="シェアハウス" loading="lazy">
+        <h3>シェアハウス</h3>
+        <p>共用リビングに設置してコミュニケーションのきっかけに。住人同士の交流促進や物件の個性づくりに。</p>
       </div>
     </div>
 
@@ -424,8 +383,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         スマートコミックは法人向け・社宅向けにも<br class="md-break">
         幅広くご対応しております
       </h3>
-      <p>まずはお気軽にお問い合わせください</p>
-      <a href="https://smart-comic.co.jp/contact-new/">資料請求はこちら（無料）</a>
+      <p class="cta-banner-sub">まずはお気軽にお問い合わせください</p>
+      <a href="#contact" class="cta-banner-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>資料請求はこちら（無料）</a>
     </div>
   </div>
 </section>
@@ -440,6 +399,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="section-divider"></div>
     </div>
 
+    <div class="pricing-layout">
+      <div class="pricing-character pricing-character-left">
+        <img src="images/bg_02.png" alt="" loading="lazy">
+      </div>
     <div class="pricing-card">
       <!-- Header -->
       <div class="pricing-header">
@@ -554,6 +517,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+      <div class="pricing-character pricing-character-right">
+        <img src="images/bg_03.png" alt="" loading="lazy">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -575,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flow-step">
           <div class="flow-step-icon">
             <div class="flow-step-icon-box">
-              <svg class="icon" viewBox="0 0 24 24" stroke="#fff"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              <img src="images/ic_01.png" alt="" class="flow-icon-img">
             </div>
             <span class="flow-step-number">1</span>
           </div>
@@ -588,7 +555,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flow-step">
           <div class="flow-step-icon">
             <div class="flow-step-icon-box">
-              <svg class="icon" viewBox="0 0 24 24" stroke="#fff"><path d="M10 18V6"/><path d="M14 2v4"/><path d="M10 2v4"/><path d="m7 21 3-3-3-3"/><path d="M14 18V6"/><path d="m17 21-3-3 3-3"/></svg>
+              <img src="images/ic_02.png" alt="" class="flow-icon-img">
             </div>
             <span class="flow-step-number">2</span>
           </div>
@@ -601,7 +568,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flow-step">
           <div class="flow-step-icon">
             <div class="flow-step-icon-box">
-              <svg class="icon" viewBox="0 0 24 24" stroke="#fff"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M3 9l2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/></svg>
+              <img src="images/ic_03.png" alt="" class="flow-icon-img">
             </div>
             <span class="flow-step-number">3</span>
           </div>
@@ -614,7 +581,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flow-step">
           <div class="flow-step-icon">
             <div class="flow-step-icon-box">
-              <svg class="icon" viewBox="0 0 24 24" stroke="#fff"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <img src="images/ic_04.png" alt="" class="flow-icon-img">
             </div>
             <span class="flow-step-number">4</span>
           </div>
@@ -627,7 +594,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flow-step">
           <div class="flow-step-icon">
             <div class="flow-step-icon-box">
-              <svg class="icon" viewBox="0 0 24 24" stroke="#fff"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+              <img src="images/ic_05.png" alt="" class="flow-icon-img">
             </div>
             <span class="flow-step-number">5</span>
           </div>
@@ -655,33 +622,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- FAQ 1 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q1</div>
+          <div class="faq-q-badge">Q</div>
           <span class="faq-q-text">費用はどのくらいかかりますか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>月額3,000円〜（税別）でご利用いただけます。人気コミック・話題作もセットでこの価格に含まれています。初期費用は無料です。新刊自動お届けサービスも無料でご利用いただけます。</p>
+            <p>月額3,000円〜（税別）でご利用いただけます。人気コミック・話題作もセットでこの価格に含まれています。初期費用は無料です。新刊自動お届けサービスや在庫管理システムも無料でご利用いただけます。</p>
           </div>
         </div>
       </div>
       <!-- FAQ 2 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q2</div>
+          <div class="faq-q-badge">Q</div>
           <span class="faq-q-text">何冊から導入できますか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>100冊からご導入いただけます。エレベーターホールやエントランスなど、スペースに応じた冊数をご提案いたします。</p>
+            <p>100冊からご導入いただけます。スペースに応じた冊数をご提案いたします。</p>
           </div>
         </div>
       </div>
       <!-- FAQ 3 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q3</div>
+          <div class="faq-q-badge">Q</div>
           <span class="faq-q-text">続巻（最新刊）の仕入れは自分たちでするのでしょうか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -694,7 +661,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- FAQ 4 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q4</div>
+          <div class="faq-q-badge">Q</div>
           <span class="faq-q-text">管理の手間はかかりますか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -707,26 +674,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- FAQ 5 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q5</div>
+          <div class="faq-q-badge">Q</div>
           <span class="faq-q-text">どんな物件に向いていますか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>導入事例はお問い合わせください。</p>
+            <p>単身向けマンション・ファミリー向けマンション・学生マンション・シェアハウスなど、共用スペースのある賃貸物件に幅広く対応しています。エントランスやラウンジなどの設置スペースがあれば導入可能です。また、長らく空き部屋となっているところを、漫画部屋にして他の物件と差別化するご提案も可能です。物件の規模やスペースに合わせた最適なプランをご提案いたします。詳しい導入事例はお問い合わせください。</p>
           </div>
         </div>
       </div>
       <!-- FAQ 6 -->
       <div class="faq-item" data-faq>
         <button class="faq-question" aria-expanded="false">
-          <div class="faq-q-badge">Q6</div>
-          <span class="faq-q-text">書籍のジャンルは選べますか？</span>
+          <div class="faq-q-badge">Q</div>
+          <span class="faq-q-text">コミックの選定はお任せできますか？コミック以外に雑誌や書籍も置けますか？</span>
           <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>はい。入居者様の層（学生、社会人、ファミリーなど）に応じて最適なジャンル構成をご提案します。ご要望に応じたカスタマイズも可能です。</p>
+            <p>はい、書籍卸商である弊社が、入居者層やご要望に合わせて最適なジャンル・タイトルをセレクトいたします。少年・青年・少女コミックはもちろん、ビジネス書や雑誌などもご用意することは可能です。導入後も弊社独自のランキングデータなどでラインナップを最適化し、入居者の満足度を維持することも可能です。</p>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ 7 -->
+      <div class="faq-item" data-faq>
+        <button class="faq-question" aria-expanded="false">
+          <div class="faq-q-badge">Q</div>
+          <span class="faq-q-text">自分でコミックのタイトルを選ぶことはできますか？</span>
+          <svg class="faq-chevron icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>はい、もちろん可能です。ご自身で読みたいタイトルやジャンルをご指定いただくこともできます。弊社のおすすめセレクトと組み合わせることも可能ですので、お気軽にご相談ください。</p>
           </div>
         </div>
       </div>
@@ -737,10 +717,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ==============================
      RELATED COLUMN SECTION
      ============================== -->
-<section style="background:#f8f9fa;padding:4rem 1.5rem;">
+<section style="background:#1B3B6F;padding:4rem 1.5rem;">
   <div style="max-width:900px;margin:0 auto;">
-    <h2 style="text-align:center;font-size:1.5rem;color:#1B3B6F;margin:0 0 0.5rem;">関連コラム</h2>
-    <p style="text-align:center;font-size:0.9rem;color:#666;margin:0 0 2rem;">賃貸経営に役立つ情報をお届けします</p>
+    <h2 style="text-align:center;font-size:1.5rem;color:#fff;margin:0 0 0.5rem;">関連コラム</h2>
+    <p style="text-align:center;font-size:0.9rem;color:rgba(255,255,255,0.8);margin:0 0 2rem;">賃貸経営に役立つ情報をお届けします</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;">
 
       <a href="https://smart-comic.co.jp/blog/chintai-kuushitsu-taisaku/" class="column-card">
@@ -801,6 +781,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      FINAL CTA SECTION
      ============================== -->
 <section class="final-cta">
+  <div class="final-cta-bg">
+    <img src="images/bg_04.jpg" alt="">
+    <div class="final-cta-bg-overlay"></div>
+  </div>
   <div class="final-cta-inner">
     <h2>
       まずは無料の資料請求から<br>
@@ -811,8 +795,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       導入事例や料金の詳細をまとめた資料を無料でお送りいたします。
     </p>
     <div class="final-cta-buttons">
-      <a href="https://smart-comic.co.jp/contact-new/" class="btn-navy">資料請求はこちら（無料）</a>
-      <a href="tel:0120887748" class="btn-outline-navy" style="display:inline-flex;align-items:center;gap:8px;">
+      <a href="https://smart-comic.co.jp/contact-new/" class="btn-cta-orange">資料請求はこちら（無料）</a>
+      <a href="tel:0120887748" class="btn-cta-navy" style="display:inline-flex;align-items:center;gap:8px;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         0120-887-748
       </a>
