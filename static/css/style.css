@@ -91,7 +91,7 @@ h1, h2, h3, h4 {
   padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .top-nav-logo img {
@@ -154,7 +154,7 @@ h1, h2, h3, h4 {
 .hero-content-inner {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 
@@ -228,7 +228,7 @@ h1, h2, h3, h4 {
 .hero-sub {
   color: rgba(27, 59, 111, 0.55);
   font-size: 1rem;
-  max-width: 36rem;
+  max-width: 48rem;
   margin: 0 auto;
   line-height: 1.9;
   margin-bottom: 0;
@@ -363,9 +363,25 @@ h1, h2, h3, h4 {
 }
 
 .pain-points .section-header h2 {
-  font-size: 1.875rem;
-  color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1rem;
+  color: #111827;
+}
+
+.pain-points .pain-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.pain-points .pain-main {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .section-header h2 {
@@ -426,8 +442,16 @@ h1, h2, h3, h4 {
 }
 
 .pain-item p {
-  color: #374151;
-  font-size: 0.875rem;
+  color: #1F2937;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.pain-item p strong {
+  color: #1B3B6F;
+  font-weight: 700;
 }
 
 .pain-bridge {
@@ -475,7 +499,38 @@ h1, h2, h3, h4 {
 }
 
 .benefits .section-header h2 {
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.benefits .benefits-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.benefits .benefits-main {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.benefits .benefits-main em {
+  font-style: normal;
+  color: #2B5EA7;
+}
+
+.benefits .benefits-sub {
+  font-size: 1rem;
+  color: #1B3B6F;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0.25rem;
 }
 
 .benefits .section-header .section-title-accent {
@@ -493,12 +548,24 @@ h1, h2, h3, h4 {
 }
 
 .benefit-card {
+  position: relative;
   background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   border: 1px solid #E0E8F0;
   transition: all 0.3s;
+}
+
+.benefit-number {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F5A623;
+  letter-spacing: 0.04em;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
 }
 
 .benefit-card:hover {
@@ -529,14 +596,21 @@ h1, h2, h3, h4 {
 }
 
 .benefit-card h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #111827;
+  font-weight: 700;
   margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
 
 .benefit-card p {
   color: #4B5563;
-  line-height: 1.625;
+  line-height: 1.75;
+}
+
+.benefit-card p strong {
+  color: #1B3B6F;
+  font-weight: 700;
 }
 
 /* ============================
@@ -553,6 +627,41 @@ h1, h2, h3, h4 {
   padding: 0 1rem;
 }
 
+.property-types .section-header h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.property-types .property-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.property-types .property-main {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.property-types .property-main em {
+  font-style: normal;
+  color: #2B5EA7;
+}
+
+.property-types .property-sub {
+  font-size: 1rem;
+  color: #1B3B6F;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
 .property-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -564,19 +673,27 @@ h1, h2, h3, h4 {
   border-radius: 0.5rem;
   object-fit: cover;
   aspect-ratio: 16 / 10;
+  display: block;
 }
 
 .property-item h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #111827;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .property-item p {
   color: #4B5563;
-  font-size: 0.875rem;
-  line-height: 1.625;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.property-item p strong {
+  color: #1B3B6F;
+  font-weight: 700;
 }
 
 /* CTA Banner */
@@ -639,6 +756,83 @@ h1, h2, h3, h4 {
 .pricing {
   padding: 5rem 0 3.5rem;
   background: #F4F7FB;
+}
+
+/* Pricing header 3-line structure */
+.pricing .section-header h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pricing .pricing-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+.pricing .pricing-main {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1B3B6F;
+}
+.pricing .pricing-main em {
+  font-style: normal;
+  color: #2B5EA7;
+}
+.pricing .pricing-sub {
+  font-size: 0.95rem;
+  color: #1B3B6F;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Initial cost zero / first month free badges */
+.pricing-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.pricing-initial-badge {
+  display: inline-block;
+  background: #F5A623;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+/* Pricing amount label (月額) */
+.pricing-amount-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Feature 無料 badge (clean class) */
+.pricing-feature-badge {
+  display: inline-block;
+  background: #F5A623;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Feature title strong */
+.pricing-feature-text p:first-child strong {
+  color: #1B3B6F;
+  font-weight: 700;
 }
 
 .pricing-inner {
@@ -708,7 +902,7 @@ h1, h2, h3, h4 {
 }
 
 .pricing-amount .amount {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -731,24 +925,24 @@ h1, h2, h3, h4 {
 }
 
 .pricing-body {
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 1.25rem;
 }
 
 .pricing-features {
   display: grid;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .pricing-feature {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .pricing-feature-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 0.75rem;
   background: rgba(27, 59, 111, 0.08);
   display: flex;
@@ -772,11 +966,15 @@ h1, h2, h3, h4 {
 .pricing-feature-text p:first-child {
   color: #111827;
   font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .pricing-feature-text p:last-child {
   color: #6B7280;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  margin-top: 2px;
+  line-height: 1.5;
 }
 
 .pricing-details {
@@ -786,7 +984,8 @@ h1, h2, h3, h4 {
 
 .pricing-detail-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.25rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid #f9fafb;
 }
@@ -811,6 +1010,46 @@ h1, h2, h3, h4 {
 .flow {
   padding: 5rem 0;
   background: #fff;
+}
+
+/* Flow header 3-line structure */
+.flow .section-header h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.flow .flow-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+.flow .flow-main {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1B3B6F;
+}
+.flow .flow-main em {
+  font-style: normal;
+  color: #2B5EA7;
+}
+.flow .flow-sub {
+  font-size: 0.95rem;
+  color: #1B3B6F;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Flow step strong */
+.flow-step-content h3 strong {
+  color: #1B3B6F;
+  font-weight: 700;
+}
+.flow-step-content p strong {
+  color: #1B3B6F;
+  font-weight: 600;
 }
 
 .flow-inner {
@@ -1006,6 +1245,10 @@ h1, h2, h3, h4 {
 
 .faq .section-header h2 {
   color: #1B3B6F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .faq .section-header p {
@@ -1014,6 +1257,87 @@ h1, h2, h3, h4 {
 
 .faq .section-divider {
   background: #1B3B6F;
+}
+
+/* FAQ header 3-line structure */
+.faq .faq-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+.faq .faq-main {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1B3B6F;
+}
+.faq .faq-main em {
+  font-style: normal;
+  color: #2B5EA7;
+}
+.faq .faq-sub {
+  font-size: 0.95rem;
+  color: #1B3B6F;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* FAQ question strong */
+.faq-question .faq-q-text strong {
+  color: #1B3B6F;
+  font-weight: 700;
+}
+
+/* ── Related Columns Section (関連コラム) ── */
+.related-columns-section {
+  background: #1B3B6F;
+  padding: 4rem 1.5rem;
+}
+.related-columns-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.related-columns-header {
+  margin-bottom: 2.5rem;
+}
+.related-columns-header h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+.related-columns-header .columns-keywords {
+  font-size: 0.875rem;
+  color: #F5A623;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+.related-columns-header .columns-main {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+}
+.related-columns-header .columns-main em {
+  font-style: normal;
+  color: #F5A623;
+}
+.related-columns-header .columns-sub {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.column-card h3 strong {
+  color: #1B3B6F;
+  font-weight: 700;
+}
+.column-card-desc strong {
+  color: #1B3B6F;
+  font-weight: 600;
 }
 
 /* ── Column Cards (関連コラム) ── */
@@ -1114,12 +1438,12 @@ h1, h2, h3, h4 {
 
 .final-cta h2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #0f2550;
   margin-bottom: 1rem;
 }
 
 .final-cta p {
-  color: rgba(255, 255, 255, 0.9);
+  color: #0f2550;
   margin-bottom: 2rem;
   line-height: 1.625;
 }
@@ -1241,6 +1565,16 @@ h1, h2, h3, h4 {
 .footer-logo img {
   height: 3.5rem;
   margin-bottom: 0.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .footer-logo img {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .footer-desc {
@@ -1365,9 +1699,23 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 768px) {
+  .related-columns-header {
+    margin-bottom: 3rem;
+  }
+  .related-columns-header .columns-main {
+    font-size: 2.25rem;
+  }
+  .related-columns-header .columns-sub {
+    font-size: 1.05rem;
+  }
+
   .column-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+
+  .top-nav-inner {
+    justify-content: space-between;
   }
 
   .top-nav-links {
@@ -1399,6 +1747,18 @@ h1, h2, h3, h4 {
     padding: 5rem 0 0;
   }
 
+  .pain-points .pain-keywords {
+    font-size: 1rem;
+  }
+
+  .pain-points .pain-main {
+    font-size: 2.5rem;
+  }
+
+  .pain-item p {
+    font-size: 1.125rem;
+  }
+
   .section-header h2 {
     font-size: 2.25rem;
   }
@@ -1415,20 +1775,54 @@ h1, h2, h3, h4 {
     font-size: 2.25rem;
   }
 
+  .benefits .benefits-keywords {
+    font-size: 1rem;
+  }
+
+  .benefits .benefits-main {
+    font-size: 2.5rem;
+  }
+
+  .benefits .benefits-sub {
+    font-size: 1.125rem;
+  }
+
   .benefit-card {
     padding: 2rem;
   }
 
+  .benefit-number {
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+  }
+
   .benefit-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .property-types {
     padding: 7rem 0;
   }
 
+  .property-types .property-keywords {
+    font-size: 1rem;
+  }
+
+  .property-types .property-main {
+    font-size: 2.5rem;
+  }
+
+  .property-types .property-sub {
+    font-size: 1.125rem;
+  }
+
   .property-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .property-item h3 {
+    font-size: 1.375rem;
   }
 
   .cta-banner h3 {
@@ -1443,6 +1837,14 @@ h1, h2, h3, h4 {
     padding: 5rem 0 3.5rem;
   }
 
+  .pricing .pricing-main {
+    font-size: 2.25rem;
+  }
+
+  .pricing .pricing-sub {
+    font-size: 1.05rem;
+  }
+
   .pricing-character {
     display: block;
   }
@@ -1451,12 +1853,48 @@ h1, h2, h3, h4 {
     padding: 2rem;
   }
 
+  .pricing-features {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-feature {
+    gap: 1rem;
+  }
+
+  .pricing-feature-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .pricing-feature-text p:first-child {
+    font-size: 1rem;
+  }
+
+  .pricing-feature-text p:last-child {
+    font-size: 0.875rem;
+  }
+
   .pricing-amount .amount {
     font-size: 3.75rem;
   }
 
+  .pricing-detail-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .flow {
     padding: 7rem 0;
+  }
+
+  .flow .flow-main {
+    font-size: 2.25rem;
+  }
+
+  .flow .flow-sub {
+    font-size: 1.05rem;
   }
 
   .flow-line {
@@ -1488,6 +1926,14 @@ h1, h2, h3, h4 {
 
   .faq {
     padding: 7rem 0;
+  }
+
+  .faq .faq-main {
+    font-size: 2.25rem;
+  }
+
+  .faq .faq-sub {
+    font-size: 1.05rem;
   }
 
   .final-cta {
